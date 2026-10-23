@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hidden Gems | Zauq-e-Karachi</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/hidden-gems.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+<div class="container-fluid px-lg-5">
+
+<a class="navbar-brand" href="index.html">
+ZAUQ<span>-E-KARACHI</span>
+</a>
+
+<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navMenu">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="restaurants.html">Restaurants</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="hidden-gems.html">Hidden Gems</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="food-stories.html">Food Stories</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+<ul class="navbar-nav" id="authArea"></ul>
+
+</div>
+</div>
+</nav>
+
+<section class="gems-hero">
+
+<div class="container text-center">
+
+<p class="hero-mini">
+DISCOVER THE UNKNOWN
+</p>
+
+<h1 class="hero-title">
+Karachi's Hidden
+<span>Food Gems</span>
+</h1>
+
+<p class="hero-desc">
+Explore underrated restaurants,
+secret food spots and local favorites
+that deserve the spotlight.
+</p>
+
+</div>
+
+</section>
+
+<section class="gems-section">
+<div class="container">
+<div class="search-wrapper">
+    <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="Search Hidden Gems..."
+        >
+    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+</div>
+
+</div>
+<div class="text-center mb-4">
+  <select id="areaFilter" class="form-select w-auto mx-auto">
+    <option value="all">All Areas</option>
+    <option value="Gulshan">Gulshan</option>
+    <option value="Saddar">Saddar</option>
+    <option value="Clifton">Clifton</option>
+    <option value="Nazimabad">Nazimabad</option>
+    <option value="Burns Road">Burns Road</option>
+    <option value="Bahadurabad">Bahadurabad</option>
+    <option value="PECHS">PECHS</option>
+    <option value="North Nazimabad">North Nazimabad</option>
+    <option value="Do Darya">Do Darya</option>
+    <option value="Boat Basin">Boat Basin</option>
+    <option value="Tariq Road">Tariq Road</option>
+    <option value="DHA">DHA</option>
+    <option value="Federal B Area">Federal B Area</option>
+    <option value="Gulistan-e-Johar">Gulistan-e-Johar</option>
+    <option value="Korangi">Korangi</option>
+    <option value="Liaquatabad">Liaquatabad</option>
+    <option value="Malir">Malir</option>
+    <option value="Scheme 33">Scheme 33</option>
+    <option value="Soldier Bazar">Soldier Bazar</option>
+    <option value="Shahrah-e-Faisal">Shahrah-e-Faisal</option>
+    <option value="Shaheed-e-Millat">Shaheed-e-Millat</option>
+    <option value="Khadda Market">Khadda Market</option>
+  </select>
+</div>
+<div class="filter-wrapper">
+
+<button class="filter-btn active"
+data-filter="all">
+All
+</button>
+
+<button class="filter-btn"
+data-filter="biryani">
+Biryani
+</button>
+
+<button class="filter-btn"
+data-filter="bbq">
+BBQ
+</button>
+
+<button class="filter-btn"
+data-filter="nihari">
+Nihari
+</button>
+
+<button class="filter-btn"
+data-filter="chai">
+Chai
+</button>
+
+<button class="filter-btn"
+data-filter="dessert">
+Desserts
+</button>
+
+<button class="filter-btn"
+data-filter="street-food">
+Street Food
+</button>
+
+<button class="filter-btn"
+data-filter="fast-food">
+Fast Food
+</button>
+
+</div>
+
+<div class="text-center mb-4">
+
+<h5 id="gemCount"></h5>
+
+</div>
+<div class="container px-3 px-sm-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="gemContainer">
+       </div>
+</div>
+<div class="mt-5">
+
+<ul
+class="pagination justify-content-center"
+id="pagination">
+</ul>
+
+</div>
+
+</div>
+
+</section>
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="row g-4 footer-content align-items-start">
+            <div class="col-lg-4">
+                <h2 class="footer-logo">
+                    ZAUQ<span>-E-KARACHI</span>
+                </h2>
+                <p class="footer-desc">
+                    Discover Karachi's restaurants, hidden gems, culinary stories through a digital guide.
+                </p>
+                 <div class="social-links">
+                    <a href="https://www.instagram.com/streetfoodpk/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/groups/karachifoodstreet/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@streetfoodpks" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@streetfoodpk" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="hidden-gems.html">Hidden Gems</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="food-stories.html">Food Stories</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 ">
+                <h5>Popular Categories</h5>
+                <ul>
+                    <li><a href="restaurants.html?category=biryani">Biryani</a></li>
+                    <li><a href="restaurants.html?category=bbq">BBQ</a></li>
+                    <li><a href="restaurants.html?category=nihari">Nihari</a></li>
+                    <li><a href="restaurants.html?category=street-food">Street Food</a></li>
+                    <li><a href="restaurants.html?category=dessert">Desserts</a></li>
+                </ul>
+            </div>
+                    <div class="col-lg-2 col-md-6">
+            <h5>Resources</h5>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Get In Touch</h5>
+                <p> Karachi, Pakistan</p>
+                <p>aazafyousuf.aptech@gmail.com</p>
+                <p> +92 337 0757609</p>
+            </div>
+        </div>
+        <div class="food-quote">
+            “Every dish tells a story,
+            every street holds a flavour,
+            every bite belongs to Karachi.”
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 Zauq-e-Karachi. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<a href="ai.html" class="ai-float-btn">
+    <i class="fa-solid fa-robot"></i>
+</a>
+<button id="backToTop">Top</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="base.js"></script>
+<script src="navbar-auth.js"></script>
+<script src="hidden-gems.js"></script>
+
+</body>
+</html>

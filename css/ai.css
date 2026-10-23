@@ -1,0 +1,530 @@
+
+body{
+
+background:#111;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-family:Poppins,sans-serif;
+
+}
+
+.chat-container{
+
+width:420px;
+height:700px;
+
+background:#1a1a1a;
+
+border-radius:20px;
+
+display:flex;
+
+flex-direction:column;
+
+overflow:hidden;
+
+box-shadow:0 0 30px rgba(0,0,0,.5);
+
+}
+
+.chat-header{
+
+background:#D4AF37;
+
+padding:18px;
+
+color:#111;
+
+}
+
+.chat-header h4{
+
+margin:0;
+
+font-weight:700;
+
+}
+
+.bot-icon{
+
+width:55px;
+
+height:55px;
+
+border-radius:50%;
+
+background:#111;
+
+color:#D4AF37;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+}
+
+.chat-box{
+
+flex:1;
+
+overflow-y:auto;
+
+padding:20px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.bot-message{
+
+background:#2c2c2c;
+
+padding:15px;
+
+border-radius:15px;
+
+align-self:flex-start;
+
+max-width:75%;
+
+color:white;
+
+}
+
+.user-message{
+
+background:#D4AF37;
+
+padding:15px;
+
+border-radius:15px;
+
+align-self:flex-end;
+
+max-width:75%;
+
+color:black;
+
+font-weight:600;
+
+}
+
+.chat-input{
+
+display:flex;
+
+padding:15px;
+
+background:#181818;
+
+}
+
+.chat-input input{
+
+flex:1;
+
+border:none;
+
+padding:15px;
+
+border-radius:40px;
+
+outline:none;
+
+background:#2a2a2a;
+
+color:white;
+
+}
+
+.chat-input button{
+
+margin-left:10px;
+
+width:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#D4AF37;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.chat-input button:hover{
+
+transform:scale(1.05);
+
+}
+/* Container rules inside chat box */
+#chatBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Base message row structure */
+.message {
+    display: flex;
+    width: 100%;
+}
+
+/* 🧑‍💻 User rows are pushed to the RIGHT side */
+.message.user {
+    justify-content: flex-end;
+}
+
+/* 🤖 Bot rows stay on the LEFT side */
+.message.bot {
+    justify-content: flex-start;
+}
+
+/* The actual text capsule (Bubble) */
+.message .bubble {
+    padding: 12px 18px;
+    border-radius: 18px;
+    max-width: 70%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* 🧑‍💻 USER MESSAGE HIGHLIGHT (Saffron Gold or Premium Accent) */
+.message.user .bubble {
+    background: #d4a762; /* Saffron Gold background like Zauq theme */
+    color: #000000;      /* Dark text for contrast on gold */
+    border-bottom-right-radius: 4px; /* Crisp chat bubble tail corner */
+    font-weight: 500;
+}
+
+/* 🤖 BOT MESSAGE HIGHLIGHT (Sleek Dark Gray Card) */
+.message.bot .bubble {
+    background: #1e1e1e; /* Soft dark charcoal grid background */
+    color: #ffffff;      /* Clean white text */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom-left-radius: 4px;  /* Crisp chat bubble tail corner */
+}
+
+/* Typing state animation styling */
+#typing .bubble {
+    font-style: italic;
+    color: #d4a762;
+    border-color: rgba(212, 167, 98, 0.2);
+}
+:root {
+    --gold: #d4a762;
+    --charcoal: #141414;
+    --dark-eval: #0d0d0d;
+}
+
+/* Custom Extensions */
+.bg-charcoal { background-color: var(--charcoal); }
+.bg-dark-eval { background-color: var(--dark-eval); }
+.text-gold { color: var(--gold); }
+.tracking-wide { letter-spacing: 1px; }
+.spacing-1 { letter-spacing: 0.5px; }
+.extra-small { font-size: 11px; }
+
+/* Bot Icon Wrapper Dimensions */
+/* Is class ko replace karein */
+.bot-icon-circle {
+    width: 65px;         /* 👈 Width barha di taake text fit aaye */
+    height: 44px;        /* Height same rakhi capsule shape ke liye */
+    font-size: 11px;     /* Text size perfectly balanced */
+    font-weight: 700;    /* Text bold premium dikhne ke liye */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+/* Interactive Focus Styling */
+.focus-gold:focus {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: var(--gold) !important;
+    box-shadow: 0 0 0 0.25rem rgba(212, 167, 98, 0.15) !important;
+}
+
+/* Premium Button Setup */
+.btn-gold {
+    background-color: var(--gold);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s ease;
+}
+.btn-gold:hover:not(:disabled) {
+    background-color: #c29553;
+    color: #000;
+    transform: translateY(-1px);
+}
+.btn-gold:disabled {
+    background-color: rgba(212, 167, 98, 0.4);
+    color: rgba(0,0,0,0.4);
+}
+
+/* Dynamic Chat View Engine Limits */
+.chat-box {
+    height: 460px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .chat-box {
+        height: 500px;
+    }
+}
+
+/* Custom Modern Minimalist Scrollbar */
+.chat-box::-webkit-scrollbar { width: 5px; }
+.chat-box::-webkit-scrollbar-track { background: transparent; }
+.chat-box::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+.chat-box::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+/* --- CORE FLEX CHAT BUBBLES --- */
+.message {
+    display: flex;
+    width: 100%;
+}
+.message.user { justify-content: flex-end; }
+.message.bot { justify-content: flex-start; }
+
+.message .bubble {
+    padding: 12px 18px;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 85%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 576px) {
+    .message .bubble { max-width: 70%; }
+}
+
+/* User Bubble UI */
+.message.user .bubble {
+    background: var(--gold);
+    color: #000000;
+    font-weight: 500;
+    border-radius: 18px 18px 4px 18px;
+}
+.ZAUQ {
+    COLOR: var(--gold);
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+}
+/* Bot Bubble UI */
+.message.bot .bubble {
+    background: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 18px 18px 18px 4px;
+}
+
+/* Pulse Animation Logic */
+.pulse-dot {
+    animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.8; }
+}
+:root {
+    --gold: #d4a762;
+    --charcoal: #141414;
+    --dark-eval: #0d0d0d;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Palette Extensions */
+.bg-charcoal { background-color: var(--charcoal); }
+.bg-dark-eval { background-color: var(--dark-eval); }
+.text-gold { color: var(--gold); }
+.tracking-wide { letter-spacing: 1px; }
+.spacing-1 { letter-spacing: 0.5px; }
+.extra-small { font-size: 11px; }
+
+/* 🤖 PERFECTED BOT AVATAR CIRCLE STYLE */
+.bot-icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--dark-eval);
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    padding: 4px;
+    /* Multiline context centering support */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Floating Interactive Buttons Setup */
+.ai-float-btn {
+    position: fixed;
+    bottom: 95px;      
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--gold), var(--gold));
+    color: #111;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(212, 167, 98, 0.45);
+    z-index: 9999;
+    transition: .3s ease;
+}
+.ai-float-btn:hover {
+    transform: translateY(-6px) scale(1.08);
+    color: #111;
+    box-shadow: 0 15px 40px rgba(212, 167, 98, 0.6);
+}
+.ai-float-btn::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid rgba(212, 167, 98, 0.4);
+    animation: aiPulse 2s infinite;
+}
+
+@keyframes aiPulse {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
+/* Interactive Input Focus CSS */
+.focus-gold:focus {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: var(--gold) !important;
+    box-shadow: 0 0 0 0.25rem rgba(212, 167, 98, 0.15) !important;
+}
+
+/* Premium Primary Buttons styling */
+.btn-gold {
+    background-color: var(--gold);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s ease;
+}
+.btn-gold:hover:not(:disabled) {
+    background-color: #c29553;
+    color: #000;
+    transform: translateY(-1px);
+}
+.btn-gold:disabled {
+    background-color: rgba(212, 167, 98, 0.4);
+    color: rgba(0,0,0,0.4);
+}
+
+/* Dynamic Chat Windows View configuration */
+.chat-box {
+    height: 460px;
+    overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+    .chat-box { height: 500px; }
+}
+
+.chat-box::-webkit-scrollbar { width: 5px; }
+.chat-box::-webkit-scrollbar-track { background: transparent; }
+.chat-box::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+.chat-box::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+/* Message row setup */
+.message {
+    display: flex;
+    width: 100%;
+}
+.message.user { justify-content: flex-end; }
+.message.bot { justify-content: flex-start; }
+
+.message .bubble {
+    padding: 12px 18px;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 85%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 576px) {
+    .message .bubble { max-width: 70%; }
+}
+/* Back to Home Button Custom Hover Effects */
+.hover-gold-btn {
+    transition: all 0.3s ease;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+.hover-gold-btn:hover {
+    color: var(--gold) !important;
+    border-color: var(--gold) !important;
+    background-color: rgba(212, 167, 98, 0.05) !important;
+    transform: translateX(-3px); /* Chota sa micro-interaction movement */
+}
+/* Message Bubble dynamic states customization */
+.message.user .bubble {
+    background: var(--gold);
+    color: #000000;
+    font-weight: 500;
+    border-radius: 18px 18px 4px 18px;
+}
+.message.bot .bubble {
+    background: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 18px 18px 18px 4px;
+}
+
+#typing .bubble {
+    font-style: italic;
+    color: var(--gold);
+}
+
+/* Status Active Pulse Animation */
+.pulse-dot { animation: pulse 1.8s infinite; }
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.8; }
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurants | Zauq-e-Karachi</title>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/restaurants.css">
+
+<style>
+.page-number{
+  width:42px;
+  height:42px;
+  border-radius:10px;
+  margin:0 5px;
+  border:1px solid #333;
+  background:#111;
+  color:#fff;
+  transition:.3s;
+}
+
+.page-number:hover{
+  transform:translateY(-3px);
+}
+
+.page-number.active{
+  background:var(--gold);
+  color:#000;
+  box-shadow:0 0 15px rgba(255,215,0,0.4);
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+<div class="container-fluid px-lg-5">
+<a class="navbar-brand" href="index.html">
+ZAUQ<span>-E-KARACHI</span>
+</a>
+<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="restaurants.html">Restaurants</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="hidden-gems.html">Hidden Gems</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="food-stories.html">Food Stories</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+<ul class="navbar-nav" id="authArea"></ul>
+</div>
+</div>
+</nav>
+<section class="restaurants-hero text-center">
+  <div class="container">
+
+    <p class="hero-mini">DISCOVER KARACHI</p>
+
+    <h1 class="hero-title">
+      Karachi's Best <span>Restaurants</span>
+    </h1>
+
+    <p class="hero-desc">
+      Explore iconic biryani houses, BBQ legends, nihari spots and hidden culinary treasures.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="restaurants-section">
+
+<div class="container">
+<div class="search-wrapper">
+    <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="Search Restaurants..."
+        >
+    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+</div>
+
+<div class="text-center mb-4">
+  <select id="areaFilter" class="form-select w-auto mx-auto">
+    <option value="all">All Areas</option>
+    <option value="Gulshan">Gulshan</option>
+    <option value="Saddar">Saddar</option>
+    <option value="Clifton">Clifton</option>
+    <option value="Nazimabad">Nazimabad</option>
+    <option value="Burns Road">Burns Road</option>
+    <option value="Bahadurabad">Bahadurabad</option>
+    <option value="PECHS">PECHS</option>
+    <option value="North Nazimabad">North Nazimabad</option>
+    <option value="Do Darya">Do Darya</option>
+    <option value="Boat Basin">Boat Basin</option>
+    <option value="Tariq Road">Tariq Road</option>
+    <option value="DHA">DHA</option>
+    <option value="Federal B Area">Federal B Area</option>
+    <option value="Gulistan-e-Johar">Gulistan-e-Johar</option>
+    <option value="Korangi">Korangi</option>
+    <option value="Liaquatabad">Liaquatabad</option>
+    <option value="Malir">Malir</option>
+    <option value="Scheme 33">Scheme 33</option>
+    <option value="Soldier Bazar">Soldier Bazar</option>
+    <option value="Shahrah-e-Faisal">Shahrah-e-Faisal</option>
+    <option value="Shaheed-e-Millat">Shaheed-e-Millat</option>
+    <option value="Khadda Market">Khadda Market</option>
+  </select>
+</div>
+
+<div class="filter-wrapper">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="biryani">Biryani</button>
+    <button class="filter-btn" data-filter="bbq">BBQ</button>
+    <button class="filter-btn" data-filter="nihari">Nihari</button>
+    <button class="filter-btn" data-filter="chai">Chai</button>
+    <button class="filter-btn" data-filter="dessert">Dessert</button>
+    <button class="filter-btn" data-filter="street-food">Street Food</button>
+    <button class="filter-btn" data-filter="fast-food">Fast Food</button>
+    <button class="filter-btn" data-filter="continental">Continental</button>
+
+  </div>
+
+  <h5 id="restaurantCount" class="mt-4"></h5>
+
+  <div class="row g-4" id="restaurantContainer"></div>
+
+  <div class="text-center mt-5">
+    <div id="pagination"></div>
+  </div>
+
+</div>
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="base.js"></script>
+<script src="restaurants.js"></script>
+<script src="navbar-auth.js"></script>
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="row g-4 footer-content align-items-start">
+            <div class="col-lg-4">
+                <h2 class="footer-logo">
+                    ZAUQ<span>-E-KARACHI</span>
+                </h2>
+                <p class="footer-desc">
+                    Discover Karachi's restaurants, hidden gems, culinary stories through a digital guide.
+                </p>
+   <div class="social-links">
+                    <a href="https://www.instagram.com/streetfoodpk/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/groups/karachifoodstreet/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@streetfoodpks" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@streetfoodpk" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="hidden-gems.html">Hidden Gems</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="food-stories.html">Food Stories</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 ">
+                <h5>Popular Categories</h5>
+                <ul>
+                    <li><a href="restaurants.html?category=biryani">Biryani</a></li>
+                    <li><a href="restaurants.html?category=bbq">BBQ</a></li>
+                    <li><a href="restaurants.html?category=nihari">Nihari</a></li>
+                    <li><a href="restaurants.html?category=street-food">Street Food</a></li>
+                    <li><a href="restaurants.html?category=dessert">Desserts</a></li>
+                </ul>
+            </div>
+                    <div class="col-lg-2 col-md-6">
+            <h5>Resources</h5>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Get In Touch</h5>
+                <p> Karachi, Pakistan</p>
+                <p>aazafyousuf.aptech@gmail.com</p>
+                <p> +92 337 0757609</p>
+            </div>
+        </div>
+        <div class="food-quote">
+            “Every dish tells a story,
+            every street holds a flavour,
+            every bite belongs to Karachi.”
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 Zauq-e-Karachi. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<a href="ai.html" class="ai-float-btn">
+    <i class="fa-solid fa-robot"></i>
+</a>
+<button id="backToTop">Top</button>
+</body>
+</html>

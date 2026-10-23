@@ -1,0 +1,235 @@
+.stories-hero {
+    padding: 180px 0 100px;
+    text-align: center;
+}
+
+.hero-desc {
+    max-width: 700px;
+    margin: auto;
+    color: var(--gray);
+}
+
+.featured-story {
+    padding-bottom: 120px;
+}
+
+.featured-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #111;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.featured-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.featured-content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-content span {
+    color: var(--gold);
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.featured-content h2 {
+    margin: 20px 0;
+    font-size: 2.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.featured-content p {
+    color: #b5b5b5;
+    line-height: 1.8;
+}
+
+.story-meta {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 30px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.story-meta i {
+    color: var(--gold);
+    margin-right: 8px;
+}
+
+.read-btn {
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+/* Story Grid Cards */
+.story-card {
+    background: #111;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .08);
+    transition: .4s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(212, 167, 98, 0.3);
+}
+
+.story-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.story-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.story-tag {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.story-content h3 {
+    margin: 15px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+}
+
+.story-content p {
+    color: #999;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 120px 0;
+    background: #0a0a0a;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 70px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    top: 0;
+    bottom: 0;
+    background: var(--gold);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    width: 45%;
+    background: #111;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    position: relative;
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+}
+
+.timeline-item h3 {
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    color: #bbb;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Did You Know Section */
+.did-you-know {
+    padding-bottom: 120px;
+}
+
+.did-card {
+    background: linear-gradient(135deg, #181818, #0d0d0d);
+    border: 1px solid rgba(212, 167, 98, .2);
+    border-radius: 25px;
+    padding: 60px;
+    text-align: center;
+}
+
+.did-card h2 {
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.did-card p {
+    color: #bbb;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Food Facts Section */
+.food-facts {
+    padding: 120px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.food-facts h2 {
+    color: var(--gold);
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.food-facts p {
+    color: #999;
+}
+
+/* Responsive Styles */
+@media(max-width: 992px) {
+    .featured-card {
+        grid-template-columns: 1fr;
+    }
+    .featured-content {
+        padding: 40px;
+    }
+    .timeline::before {
+        left: 20px;
+    }
+    .timeline-item {
+        width: calc(100% - 40px);
+        margin-left: 40px !important;
+    }
+}

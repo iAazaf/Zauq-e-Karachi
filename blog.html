@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Blog | Zauq-e-Karachi</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<style>
+
+.blog-hero{
+    padding:180px 0 100px;
+    text-align:center;
+}
+
+.blog-hero h1{
+    font-size:4rem;
+    font-family:'Playfair Display',serif;
+}
+
+.blog-hero span{
+    color:var(--gold);
+}
+
+.blog-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    height:100%;
+}
+
+.blog-card:hover{
+    transform:translateY(-10px);
+    border-color:var(--gold);
+}
+
+.blog-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.blog-content{
+    padding:25px;
+}
+
+.blog-content h3{
+    margin-bottom:15px;
+}
+
+.blog-content p{
+    color:#aaa;
+}
+
+.blog-btn{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    color:black;
+    background:var(--gold);
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+<div class="container-fluid px-lg-5">
+
+<a class="navbar-brand" href="index.html">
+ZAUQ<span>-E-KARACHI</span>
+</a>
+
+<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navMenu">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="restaurants.html">Restaurants</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="hidden-gems.html">Hidden Gems</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="food-stories.html">Food Stories</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+<ul class="navbar-nav" id="authArea"></ul>
+
+</div>
+</div>
+</nav>
+<section class="blog-hero">
+<div class="container">
+
+<p class="section-mini">
+FOOD STORIES
+</p>
+
+<h1>
+Karachi Food <span>Blog</span>
+</h1>
+
+<p>
+Stories, restaurant discoveries and culinary culture from Karachi.
+</p>
+
+</div>
+</section>
+
+<section class="pb-5">
+
+<div class="container">
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+<div class="blog-card">
+
+<img src="images/biryani-main.avif">
+
+<div class="blog-content">
+
+<h3>The Story Behind Karachi Biryani</h3>
+
+<p>
+Discover how Karachi's iconic biryani became a cultural symbol.
+</p>
+
+<a href="food-stories.html" class="blog-btn">
+Read More
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="blog-card">
+
+<img src="images/bbq-main.jpeg">
+
+<div class="blog-content">
+
+<h3>Top BBQ Spots In Karachi</h3>
+
+<p>
+Explore the best BBQ destinations across the city.
+</p>
+
+<a href="restaurants.html?category=bbq" class="blog-btn">
+Read More
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="blog-card">
+
+<img src="images/quota.avif">
+
+<div class="blog-content">
+
+<h3>Hidden Food Streets</h3>
+
+<p>
+Explore Karachi's secret food streets and local flavors.
+</p>
+
+<a href="hidden-gems.html" class="blog-btn">
+Read More
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="blog-card">
+
+<img src="images/nihari-story.jpeg">
+
+<div class="blog-content">
+
+<h3>Nihari Culture Of Karachi</h3>
+
+<p>
+A traditional breakfast loved by generations.
+</p>
+
+<a href="restaurants.html?category=nihari" class="blog-btn">
+Read More
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="blog-card">
+
+<img src="images/chai-story.jpeg">
+
+<div class="blog-content">
+
+<h3>Best Chai Spots</h3>
+
+<p>
+Late-night chai culture that keeps Karachi alive.
+</p>
+
+<a href="restaurants.html?category=chai" class="blog-btn">
+Read More
+</a>
+
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="blog-card">
+<img src="images/street-food.jpeg">
+<div class="blog-content">
+<h3>Street Food Under Rs.500</h3>
+<p>
+Budget-friendly food adventures across Karachi.
+</p>
+<a href="restaurants.html?category=street-food" class="blog-btn">
+Read More
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="row g-4 footer-content align-items-start">
+            <div class="col-lg-4">
+                <h2 class="footer-logo">
+                    ZAUQ<span>-E-KARACHI</span>
+                </h2>
+                <p class="footer-desc">
+                    Discover Karachi's restaurants, hidden gems, culinary stories through a digital guide.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/streetfoodpk/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/groups/karachifoodstreet/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@streetfoodpks" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@streetfoodpk" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="hidden-gems.html">Hidden Gems</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="food-stories.html">Food Stories</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 ">
+                <h5>Popular Categories</h5>
+                <ul>
+                    <li><a href="restaurants.html?category=biryani">Biryani</a></li>
+                    <li><a href="restaurants.html?category=bbq">BBQ</a></li>
+                    <li><a href="restaurants.html?category=nihari">Nihari</a></li>
+                    <li><a href="restaurants.html?category=street-food">Street Food</a></li>
+                    <li><a href="restaurants.html?category=dessert">Desserts</a></li>
+                </ul>
+            </div>
+                    <div class="col-lg-2 col-md-6">
+            <h5>Resources</h5>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Get In Touch</h5>
+                <p> Karachi, Pakistan</p>
+                <p>aazafyousuf.aptech@gmail.com</p>
+                <p> +92 337 0757609</p>
+            </div>
+        </div>
+        <div class="food-quote">
+            “Every dish tells a story,
+            every street holds a flavour,
+            every bite belongs to Karachi.”
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 Zauq-e-Karachi. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="base.js"></script>
+<script src="navbar-auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Stories | Zauq-e-Karachi</title>
+
+    <!-- Bootstrap & Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/food-stories.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container-fluid px-lg-5">
+        <a class="navbar-brand" href="index.html">
+            ZAUQ<span>-E-KARACHI</span>
+        </a>
+        <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="restaurants.html">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hidden-gems.html">Hidden Gems</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="food-stories.html">Food Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav" id="authArea"></ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="stories-hero">
+    <div class="container text-center">
+        <p class="section-mini">KARACHI FOOD JOURNAL</p>
+        <h1 class="hero-title">Food <span>Stories</span></h1>
+        <p class="hero-desc">
+            Discover the history, culture and traditions behind Karachi's most iconic dishes.
+        </p>
+    </div>
+</section>
+
+<!-- FEATURED STORY SECTION -->
+<section class="featured-story">
+    <div class="container">
+        <div class="featured-card">
+            <img src="images/biryani-main.avif" alt="Karachi Biryani">
+            <div class="featured-content">
+                <span>FEATURED STORY</span>
+                <h2>The Story Behind Karachi's Legendary Biryani</h2>
+                <p>
+                    From family gatherings to street-side food culture, biryani became Karachi's most beloved dish. Explore how migration and local spices combined to create a taste that rules millions of hearts.
+                </p>
+                <div class="story-meta">
+                    <span><i class="fa-solid fa-clock"></i> 5 min read</span>
+                    <span><i class="fa-solid fa-calendar"></i> Updated 2026</span>
+                </div>
+                <button class="primary-btn read-story-btn read-btn" data-story="biryani">
+                    Read Story
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LATEST STORIES GRID SECTION -->
+<section class="stories-section">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <p class="section-mini">EXPLORE MORE</p>
+            <h2 class="section-title">Latest Culinary Tales</h2>
+        </div>
+        <div class="row g-4" id="storiesContainer">
+            <!-- Dynamic elements load through JS, but optimized with static design structures -->
+        </div>
+    </div>
+</section>
+
+<!-- FOOD TIMELINE SECTION -->
+<section class="timeline-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <p class="section-mini">FOOD HISTORY</p>
+            <h2 class="section-title">Karachi Through Food</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>1947</h3>
+                <p>Migration brought countless traditional recipes, rich spice blends, and aromatic cooking techniques directly to Karachi.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>1970s</h3>
+                <p>Burns Road established itself firmly as the city's premier night-time street food destination, buzzing with legendary BBQ and halwa puri.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>1990s</h3>
+                <p>Fast food and modern café culture started growing rapidly, blending western trends with local Karachi flavor notes.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Today</h3>
+                <p>Karachi stands as an unmatched food capital, with thousands of active restaurants serving diverse cuisines 24 hours a day.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DID YOU KNOW SECTION -->
+<section class="did-you-know">
+    <div class="container">
+        <div class="did-card">
+            <h2>Did You Know?</h2>
+            <p>
+                Karachi serves millions of food lovers every single day and is home to some of Pakistan's oldest and most vibrant food streets, including Burns Road, Boat Basin, and Hussainabad. The city's flavor palette shifts completely every few kilometers!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOD FACTS SECTION -->
+<section class="food-facts section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h2>1947</h2>
+                <p>Migration shaped Karachi's food identity.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>5000+</h2>
+                <p>Food businesses operate across the city.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>24/7</h2>
+                <p>Karachi's food scene never sleeps.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4 footer-content align-items-start">
+            <div class="col-lg-4">
+                <h2 class="footer-logo">ZAUQ<span>-E-KARACHI</span></h2>
+                <p class="footer-desc">
+                    Discover Karachi's restaurants, hidden gems, culinary stories through a digital guide.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/streetfoodpk/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/groups/karachifoodstreet/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@streetfoodpks" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@streetfoodpk" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="hidden-gems.html">Hidden Gems</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="food-stories.html">Food Stories</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Popular Categories</h5>
+                <ul>
+                    <li><a href="restaurants.html?category=biryani">Biryani</a></li>
+                    <li><a href="restaurants.html?category=bbq">BBQ</a></li>
+                    <li><a href="restaurants.html?category=nihari">Nihari</a></li>
+                    <li><a href="restaurants.html?category=street-food">Street Food</a></li>
+                    <li><a href="restaurants.html?category=dessert">Desserts</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Get In Touch</h5>
+                <p>Karachi, Pakistan</p>
+                <p>aazafyousuf.aptech@gmail.com</p>
+                <p>+92 337 0757609</p>
+            </div>
+        </div>
+        <div class="food-quote">
+            “Every dish tells a story, every street holds a flavour, every bite belongs to Karachi.”
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Zauq-e-Karachi. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<button id="backToTop">Top</button>
+<a href="ai.html" class="ai-float-btn">
+    <i class="fa-solid fa-robot"></i>
+</a>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="base.js"></script>
+<script src="navbar-auth.js"></script>
+<script src="food-stories.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+.restaurants-hero{
+    padding:180px 0 100px;
+    text-align:center;
+    position:relative;
+}
+
+.restaurants-hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.92)),
+    url('/images/restaurant-bg.jpeg') no-repeat
+    center/cover;
+    z-index:-1;
+}
+
+.hero-desc{
+    color:var(--gray);
+    max-width:700px;
+    margin:auto;
+}
+
+.restaurants-section{
+    padding:100px 0;
+}
+.filter-wrapper{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.filter-btn{
+    background:#171311;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:40px;
+    margin:5px;
+    transition:.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+    background:var(--gold);
+    color:black;
+}
+
+.restaurant-card{
+    background:#14100e;
+    border-radius:25px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.restaurant-card:hover{
+    transform:translateY(-8px);
+}
+
+.restaurant-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.restaurant-content{
+    padding:25px;
+}
+
+.restaurant-content h3{
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+
+.area{
+    color:var(--gold);
+    margin-bottom:10px;
+}
+
+.desc{
+    color:var(--gray);
+    font-size:.95rem;
+}
+
+.must-order{
+    display:inline-block;
+    margin-top:15px;
+    background:rgba(212,167,98,.15);
+    color:var(--gold);
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:.85rem;
+}
+
+.pagination {
+    gap: 6px;
+}
+.page-number{
+    width:42px;
+    height:42px;
+    border-radius:10px;
+    margin:0 5px;
+    border:1px solid rgba(212,167,98,.3);
+    background:#111;
+    color:var(--white);
+    transition:.3s ease;
+}
+
+.page-number:hover{
+    background:var(--gold);
+    color:#111;
+    border-color:var(--gold);
+    transform:translateY(-3px);
+    box-shadow:0 0 15px rgba(212,167,98,.4);
+}
+
+.page-number.active{
+    background:var(--gold);
+    color:#111;
+    border-color:var(--gold);
+    font-weight:600;
+    box-shadow:0 0 18px rgba(212,167,98,.5);
+}
+.pagination .page-link{
+    background:#111;
+    color:var(--white);
+    border:1px solid rgba(212,167,98,.3);
+    transition:.3s ease;
+}
+
+.pagination .page-link:hover{
+    background:var(--gold);
+    color:#111;
+    border-color:var(--gold);
+}
+
+.pagination .active .page-link{
+    background:var(--gold);
+    color:#111;
+    border-color:var(--gold);
+    box-shadow:0 0 18px rgba(212,167,98,.5);
+}
+.skeleton-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 150%;
+  }
+}
+
+.skeleton-img {
+  height: 180px;
+  margin-bottom: 12px;
+}
+
+.skeleton-line {
+  height: 12px;
+  margin-bottom: 10px;
+}
+
+.skeleton-title {
+  height: 18px;
+  width: 70%;
+  margin-bottom: 12px;
+}
+
+.skeleton-small {
+  width: 40%;
+}#areaFilter{
+    background:#111;
+    color:var(--gold);
+    border:2px solid var(--gold);
+    border-radius:12px;
+    padding:10px 40px 10px 15px;
+    font-weight:600;
+    min-width:220px;
+    box-shadow:0 0 15px rgba(212,175,55,0.2);
+
+    /* IMPORTANT: arrow ko wapas lane ke liye */
+    -webkit-appearance: menulist;
+    appearance: menulist;
+}
+
+#areaFilter:focus{
+    border-color:var(--gold);
+    box-shadow:0 0 20px rgba(212,175,55,0.4);
+    outline:none;
+}
+
+#areaFilter option{
+    background:#111;
+    color:var(--gold);
+}
+.search-wrapper{
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.search-icon{
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gold);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.search-box{
+    width: 100%;
+    padding: 18px 25px 18px 60px;
+    border: none;
+    border-radius: 60px;
+    background: #171311;
+    color: white;
+    outline: none;
+}
+.category-card{
+     background:rgba(212,167,98,.15);
+    color: var(--gold);
+    font-weight: 6000;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: .7;
+}
+.restaurant-name {
+ color: var(--white);
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: .7;
+}
+.paragraph {
+    color: var(--gray);
+    font-size: .4;
+    margin-bottom: 10px;
+}
+.paragraph-1{
+    color: var(--gold);
+    font-size: .4;
+    margin-bottom: 10px;
+}
+.paragraph-must-try {
+     display:inline-block;
+    margin-top:15px;
+    margin-left:15%;
+    background:rgba(212,167,98,.15);
+    color:var(--gold);
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:.85rem;
+    width: 70%;
+}
+
+.search-box::placeholder{
+    color: #999;
+}
+.count-gold{
+    color: var(--gold);
+    font-weight: 700;
+}
+.btn-maps {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: #000; /* Dark text for readability against gold, change to #fff if preferred */
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-maps:hover {
+  background-color: var(--gold);
+  filter: brightness(0.9); /* Subtly darkens the gold on hover */
+  border-color: var(--gold);
+  color: #000;
+}

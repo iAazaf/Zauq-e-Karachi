@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zauq AI - Karachi Food Assistant</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/ai.css">
+</head>
+<body class="bg-black text-white min-vh-100 d-flex flex-column justify-content-between">
+<nav class="navbar navbar-expand-lg bg-dark-eval border-bottom border-secondary border-opacity-10 py-3">
+        <div class="container">
+            <a href="index.html" class="btn btn-outline-secondary btn-sm d-flex align-items-center gap-2 rounded-3 text-white border-opacity-25 hover-gold-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+            
+            <span class="navbar-brand m-0 h1 fs-5 text-gold fw-bold tracking-wide ms-auto ms-sm-3">
+                ZAUQ-E-KARACHI
+            </span>
+        </div>
+    </nav>
+    <div class="container my-3 my-md-5 flex-grow-1 d-flex justify-content-center align-items-center">
+        <div class="row w-100 justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+                
+                <div class="card bg-charcoal border border-secondary border-opacity-25 rounded-4 shadow-lg overflow-hidden dynamic-chat-wrapper">
+                    
+                    <div class="card-header bg-dark-eval border-bottom border-secondary border-opacity-10 py-3 px-4 d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="position-relative me-3">
+                                <div class="bot-icon-circle rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm">
+                                    Zauq AI
+                                </div>
+                                <span class="position-absolute bottom-0 end-0 p-1 bg-success border border-2 border-dark rounded-circle pulse-dot"></span>
+                            </div>
+                            <div>
+                                <h2 style="color: var(--gold);" class=" uppercase spacing-1 d-block">Karachi Food Assistant</h2>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-utensils text-gold opacity-50 fs-5 d-none d-sm-block"></i>
+                    </div>
+
+                    <div id="chatBox" class="card-body p-3 p-md-4 chat-box d-flex flex-column gap-3">
+                        <div class="message bot">
+                            <div class="bubble">
+                                👋 Assalam-o-Alaikum!
+                                <br><br>
+                                Ask me anything about Karachi restaurants, hidden gems, food, chai, BBQ or desserts.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-dark-eval border-top border-secondary border-opacity-10 p-3 px-4">
+                        <div class="input-group gap-2 align-items-center">
+                            <input 
+                                id="prompt" 
+                                type="text" 
+                                class="form-control bg-black text-white border-secondary border-opacity-25 rounded-3 py-2 px-3 focus-gold" 
+                                placeholder="Ask anything about Karachi spots..." 
+                                autocomplete="off">
+                            <button 
+                                id="sendBtn" 
+                                class="btn btn-gold px-4 rounded-3 d-flex align-items-center justify-content-center h-100 gap-2" 
+                                type="button">
+                                <span class="d-none d-sm-inline">Send</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ai.js"></script>
+</body>
+</html>

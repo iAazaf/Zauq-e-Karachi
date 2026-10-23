@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "name": "Student Biryani",
+    "category": "biryani",
+    "area": "Gulshan",
+    "image": "/images/id21-hid.jpeg",
+    "mustOrder": "Chicken Biryani",
+    "desc": "One of Karachi's most famous biryani brands loved by all."
+  },
+  {
+    "id": 2,
+    "name": "Javed Nihari",
+    "category": "nihari",
+    "area": "Saddar",
+    "image": "/images/id24-hid.jpeg",
+    "mustOrder": "Maghaz Nihari",
+    "desc": "Legendary nihari destination loved by generations of Karachiites."
+  },
+  {
+    "id": 3,
+    "name": "BBQ Tonight",
+    "category": "bbq",
+    "area": "Clifton",
+    "image": "/images/id8-hid.jpeg",
+    "mustOrder": "Malai Boti",
+    "desc": "The ultimate BBQ experience in Karachi since decades."
+  },
+  {
+    "id": 4,
+    "name": "Kolachi",
+    "category": "bbq",
+    "area": "Do Darya",
+    "image": "/images/id4-res.jpeg",
+    "mustOrder": "Chicken Handi",
+    "desc": "Sea-facing restaurant with iconic Karachi harbour views."
+  },
+  {
+    "id": 5,
+    "name": "Hanifia",
+    "category": "biryani",
+    "area": "Nazimabad",
+    "image": "/images/id5-res.jpeg",
+    "mustOrder": "Beef Biryani",
+    "desc": "Neighbourhood favourite biryani spot with authentic masala."
+  },
+  {
+    "id": 6,
+    "name": "Waheed Kabab House",
+    "category": "bbq",
+    "area": "Burns Road",
+    "image": "/images/id6-res.jpeg",
+    "mustOrder": "Seekh Kabab",
+    "desc": "Traditional Burns Road BBQ that has stood the test of time."
+  },
+  {
+    "id": 7,
+    "name": "Cafe Clifton",
+    "category": "chai",
+    "area": "Clifton",
+    "image": "/images/id7-res.jpeg",
+    "mustOrder": "Doodh Patti",
+    "desc": "Popular chai and snacks destination for Clifton locals."
+  },
+  {
+    "id": 8,
+    "name": "Chai Shai",
+    "category": "chai",
+    "area": "Bahadurabad",
+    "image": "/images/id8-res.jpeg",
+    "mustOrder": "Kashmiri Chai",
+    "desc": "Perfect evening chai with pink kashmiri blend and cream top."
+  },
+  {
+    "id": 9,
+    "name": "Burns Road Food Street",
+    "category": "street-food",
+    "area": "Burns Road",
+    "image": "/images/id9-res.jpeg",
+    "mustOrder": "Kata Kat",
+    "desc": "Karachi's most iconic street food destination after dark."
+  },
+  {
+    "id": 10,
+    "name": "Delhi Rabri House",
+    "category": "dessert",
+    "area": "Saddar",
+    "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Rabri",
+    "desc": "Famous for traditional sweet dishes and creamy rabri."
+  },
+  {
+    "id": 11,
+    "name": "Boat Basin Shawarma",
+    "category": "street-food",
+    "area": "Boat Basin",
+    "image": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Shawarma",
+    "desc": "Karachi's favourite late-night shawarma stop."
+  },
+  {
+    "id": 12,
+    "name": "Karachi Broast",
+    "category": "fast-food",
+    "area": "PECHS",
+    "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Special Broast",
+    "desc": "Crispy golden broast loved across every corner of Karachi."
+  },
+  {
+    "id": 13,
+    "name": "United King",
+    "category": "dessert",
+    "area": "Tariq Road",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Cream Roll",
+    "desc": "Karachi's iconic bakery and traditional sweets brand."
+  },
+  {
+    "id": 14,
+    "name": "Angeethi",
+    "category": "bbq",
+    "area": "Shaheed-e-Millat",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Behari Boti",
+    "desc": "Popular BBQ and desi cuisine with a warm family atmosphere."
+  },
+  {
+    "id": 15,
+    "name": "Meeruth Kabab House",
+    "category": "bbq",
+    "area": "Bahadurabad",
+    "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Cheese Kabab",
+    "desc": "Known for juicy kababs and perfectly spiced grills."
+  },
+  {
+    "id": 16,
+    "name": "Biryani Centre",
+    "category": "biryani",
+    "area": "Federal B Area",
+    "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Beef Biryani",
+    "desc": "Affordable and deeply flavourful biryani for daily cravings."
+  },
+  {
+    "id": 17,
+    "name": "Hot N Spicy",
+    "category": "fast-food",
+    "area": "North Nazimabad",
+    "image": "https://images.unsplash.com/photo-1513185158878-8d8c2a2a3da3?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Zinger Burger",
+    "desc": "Popular fast-food chain serving bold flavours across Karachi."
+  },
+  {
+    "id": 18,
+    "name": "Foods Inn",
+    "category": "bbq",
+    "area": "Bahadurabad",
+    "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Makhni Handi",
+    "desc": "Family dining with classic Pakistani dishes and warm service."
+  },
+  {
+    "id": 19,
+    "name": "Cafe Aylanto",
+    "category": "continental",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Grilled Chicken Steak",
+    "desc": "Upscale continental dining with elegant ambiance in Clifton."
+  },
+  {
+    "id": 20,
+    "name": "Sabri Nihari",
+    "category": "nihari",
+    "area": "Soldier Bazar",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Nihari",
+    "desc": "A classic institution with original slow-cooked nihari recipe."
+  },
+  {
+    "id": 21,
+    "name": "Bundu Khan",
+    "category": "bbq",
+    "area": "Shahrah-e-Faisal",
+    "image": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Tikka",
+    "desc": "One of the most trusted BBQ names in Karachi for decades."
+  },
+  {
+    "id": 22,
+    "name": "Saleem Kabab House",
+    "category": "bbq",
+    "area": "Burns Road",
+    "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Shami Kabab",
+    "desc": "Old-school Burns Road kabab house with authentic street taste."
+  },
+  {
+    "id": 23,
+    "name": "Lasania",
+    "category": "continental",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Lasagne",
+    "desc": "Karachi's favourite continental comfort food destination."
+  },
+  {
+    "id": 24,
+    "name": "Kababjees",
+    "category": "bbq",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265949?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "BBQ Platter",
+    "desc": "Mixed BBQ platters with tender marinated cuts grilled fresh."
+  },
+  {
+    "id": 25,
+    "name": "Iceberg",
+    "category": "dessert",
+    "area": "Nazimabad",
+    "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Falooda",
+    "desc": "The legendary Karachi falooda destination for generations."
+  },
+  {
+    "id": 26,
+    "name": "Noorani Kabab",
+    "category": "bbq",
+    "area": "Khadda Market",
+    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Beef Kabab",
+    "desc": "Simple, smoky and satisfying kababs near the sea breeze."
+  },
+  {
+    "id": 27,
+    "name": "Karachi Chinese",
+    "category": "chinese",
+    "area": "Tariq Road",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Beef Chow Mein",
+    "desc": "Classic Karachi-style Chinese food everyone grew up eating."
+  },
+  {
+    "id": 28,
+    "name": "Al-Habib",
+    "category": "biryani",
+    "area": "Korangi",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Biryani",
+    "desc": "Korangi's most beloved biryani with deep aromatic spices."
+  },
+  {
+    "id": 29,
+    "name": "Sindhi Biryani House",
+    "category": "biryani",
+    "area": "Liaquatabad",
+    "image": "https://images.unsplash.com/photo-1631515243265-4f4c9c72e4eb?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Sindhi Biryani",
+    "desc": "Authentic Sindhi biryani with potatoes and tangy flavours."
+  },
+  {
+    "id": 30,
+    "name": "Butt Karahi",
+    "category": "bbq",
+    "area": "Burns Road",
+    "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Mutton Karahi",
+    "desc": "Famous open-flame karahi cooked fresh right in front of you."
+  },
+  {
+    "id": 31,
+    "name": "Clifton Broast",
+    "category": "fast-food",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Broast Platter",
+    "desc": "Crispy broast and burgers for Clifton's hungry crowd."
+  },
+  {
+    "id": 32,
+    "name": "Chai Wala DHA",
+    "category": "chai",
+    "area": "DHA",
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Karak Chai",
+    "desc": "Strong karak chai served to DHA's after-work crowd daily."
+  },
+  {
+    "id": 33,
+    "name": "Desi Dhaba",
+    "category": "nihari",
+    "area": "Gulistan-e-Johar",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Paya",
+    "desc": "Hearty desi breakfast spot with paya, nihari and naan."
+  },
+  {
+    "id": 34,
+    "name": "Bade Miyan",
+    "category": "street-food",
+    "area": "Saddar",
+    "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Bun Kebab",
+    "desc": "Saddar's classic bun kebab stall that never disappoints."
+  },
+  {
+    "id": 35,
+    "name": "Gelato Affair",
+    "category": "dessert",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Pistachio Gelato",
+    "desc": "Artisanal gelato with Italian and desi-inspired flavours."
+  },
+  {
+    "id": 36,
+    "name": "Optp",
+    "category": "fast-food",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Loaded Fries",
+    "desc": "Pakistan's favourite fries brand with bold seasoning."
+  },
+  {
+    "id": 37,
+    "name": "Cosa Nostra",
+    "category": "continental",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Wood-Fire Pizza",
+    "desc": "Upscale Italian dining with authentic wood-fired pizzas."
+  },
+  {
+    "id": 38,
+    "name": "Lal Qila",
+    "category": "bbq",
+    "area": "North Nazimabad",
+    "image": "https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Beef Seekh",
+    "desc": "North Nazimabad's go-to for rich BBQ and desi dinners."
+  },
+  {
+    "id": 39,
+    "name": "Dhoraji Gola Centre",
+    "category": "dessert",
+    "area": "Dhoraji",
+    "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Special Gola",
+    "desc": "Famous gola ganda with dozens of unique local syrup flavours."
+  },
+  {
+    "id": 40,
+    "name": "Aini Nihari",
+    "category": "nihari",
+    "area": "Federal B Area",
+    "image": "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Nihari",
+    "desc": "FB Area's morning staple for slow-cooked beef nihari."
+  },
+  {
+    "id": 41,
+    "name": "Bar BQ Tonight Clifton",
+    "category": "bbq",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Mixed Grill",
+    "desc": "Premium mixed grill platters with sea view ambiance."
+  },
+  {
+    "id": 42,
+    "name": "Nando's Karachi",
+    "category": "fast-food",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Peri Peri Chicken",
+    "desc": "The world-famous peri peri chicken with Karachi's own twist."
+  },
+  {
+    "id": 43,
+    "name": "Chai Time Nazimabad",
+    "category": "chai",
+    "area": "Nazimabad",
+    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Doodh Patti",
+    "desc": "Classic neighbourhood chai spot open morning till midnight."
+  },
+  {
+    "id": 44,
+    "name": "Salt'n Pepper",
+    "category": "continental",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Cordon Bleu",
+    "desc": "Fine dining continental restaurant loved for its steaks."
+  },
+  {
+    "id": 45,
+    "name": "Karachi Haleem House",
+    "category": "street-food",
+    "area": "Bahadurabad",
+    "image": "https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Beef Haleem",
+    "desc": "Slow-cooked haleem with crispy onions and fresh coriander."
+  },
+  {
+    "id": 46,
+    "name": "Tariq Road Chaat Corner",
+    "category": "street-food",
+    "area": "Tariq Road",
+    "image": "https://images.unsplash.com/photo-1626776876729-bab4369a5a5a?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Dahi Puri",
+    "desc": "Street chaat stop with tangy dahi puri and papri chaat."
+  },
+  {
+    "id": 47,
+    "name": "Peeru's Cafe",
+    "category": "continental",
+    "area": "DHA",
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Sandwich",
+    "desc": "Trendy DHA cafe with great sandwiches and specialty coffee."
+  },
+  {
+    "id": 48,
+    "name": "Biryani Pot",
+    "category": "biryani",
+    "area": "PECHS",
+    "image": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Biryani",
+    "desc": "Rich pot biryani cooked on dum for deep layered flavour."
+  },
+  {
+    "id": 49,
+    "name": "Nayab",
+    "category": "nihari",
+    "area": "Liaquatabad",
+    "image": "https://images.unsplash.com/photo-1601356616077-695728ecf769?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Nihari",
+    "desc": "One of the oldest nihari spots that locals swear by."
+  },
+  {
+    "id": 50,
+    "name": "Shish Mahal",
+    "category": "bbq",
+    "area": "Saddar",
+    "image": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Mutton Boti",
+    "desc": "Old Saddar BBQ classic with authentic charcoal grilling."
+  },
+  {
+    "id": 51,
+    "name": "McDonald's Karachi",
+    "category": "fast-food",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "McSpicy Burger",
+    "desc": "The global giant with Karachi-adapted menu favourites."
+  },
+  {
+    "id": 52,
+    "name": "KFC Karachi",
+    "category": "fast-food",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1513185158878-8d8c2a2a3da3?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Zinger Burger",
+    "desc": "Crispy chicken that remains a Karachi fast-food staple."
+  },
+  {
+    "id": 53,
+    "name": "Khyber Pass",
+    "category": "bbq",
+    "area": "North Nazimabad",
+    "image": "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chapli Kabab",
+    "desc": "Authentic Peshwari chapli kabab with naan and chutney."
+  },
+  {
+    "id": 54,
+    "name": "Barbecue Qorma House",
+    "category": "bbq",
+    "area": "Gulistan-e-Johar",
+    "image": "https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Qorma",
+    "desc": "Slow-cooked aromatic qorma paired with fresh naan."
+  },
+  {
+    "id": 55,
+    "name": "Cafe Zouk",
+    "category": "continental",
+    "area": "DHA",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281288?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Fettuccine",
+    "desc": "Upbeat cafe in DHA famous for pasta and continental bites."
+  },
+  {
+    "id": 56,
+    "name": "Fresco Sweets",
+    "category": "dessert",
+    "area": "Bahadurabad",
+    "image": "https://images.unsplash.com/photo-1502047754212-70df513807d8?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Gulab Jamun",
+    "desc": "Traditional mithai house with freshly made desi sweets."
+  },
+  {
+    "id": 57,
+    "name": "Boat Basin BBQ",
+    "category": "bbq",
+    "area": "Boat Basin",
+    "image": "https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Seekh Kabab",
+    "desc": "Evening BBQ spot by the sea with a lively Karachi vibe."
+  },
+  {
+    "id": 58,
+    "name": "Ginsoy",
+    "category": "chinese",
+    "area": "Tariq Road",
+    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Kung Pao Chicken",
+    "desc": "Reliable Chinese restaurant popular with Karachi families."
+  },
+  {
+    "id": 59,
+    "name": "Pappasallis",
+    "category": "continental",
+    "area": "Boat Basin",
+    "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Pepperoni Pizza",
+    "desc": "Boat Basin pizza spot with classic thin-crust favourites."
+  },
+  {
+    "id": 60,
+    "name": "Khana Daal",
+    "category": "street-food",
+    "area": "Liaquatabad",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Daal Chawal",
+    "desc": "Classic daal chawal that tastes like home every single time."
+  },
+  {
+    "id": 61,
+    "name": "Shandana Restaurant",
+    "category": "biryani",
+    "area": "Malir",
+    "image": "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Biryani",
+    "desc": "Malir's trusted biryani spot with generous meat portions."
+  },
+  {
+    "id": 62,
+    "name": "Golden Dragon",
+    "category": "chinese",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Sweet & Sour Chicken",
+    "desc": "Old-school Karachi Chinese food with generous portions."
+  },
+  {
+    "id": 63,
+    "name": "Rahat Bakers",
+    "category": "dessert",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1589119908995-c6800ffcd53e?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Patty",
+    "desc": "Beloved Karachi bakery chain for fresh pastries and buns."
+  },
+  {
+    "id": 64,
+    "name": "Tong Fong",
+    "category": "chinese",
+    "area": "Saddar",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chilli Chicken",
+    "desc": "Saddar's oldest Chinese restaurant with loyal regulars."
+  },
+  {
+    "id": 65,
+    "name": "Burger Lab",
+    "category": "fast-food",
+    "area": "DHA",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Smash Burger",
+    "desc": "Gourmet smash burgers with creative toppings and bold sauces."
+  },
+  {
+    "id": 66,
+    "name": "Al-Ameen Restaurant",
+    "category": "biryani",
+    "area": "Korangi",
+    "image": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Beef Biryani",
+    "desc": "Korangi favourite known for bold spice and meat-rich biryani."
+  },
+  {
+    "id": 67,
+    "name": "Do Darya Seafood",
+    "category": "seafood",
+    "area": "Do Darya",
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Grilled Fish",
+    "desc": "Fresh seafood right by the sea at Karachi's Do Darya strip."
+  },
+  {
+    "id": 68,
+    "name": "Xander's",
+    "category": "continental",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265949?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Grilled Steak",
+    "desc": "Classy fine dining with premium grilled steaks and desserts."
+  },
+  {
+    "id": 69,
+    "name": "Cocochan",
+    "category": "chinese",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1496116211227-19aaae12f9b2?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Dim Sum",
+    "desc": "Modern Asian fusion with beautiful presentation and flavours."
+  },
+  {
+    "id": 70,
+    "name": "Shiraz Restaurant",
+    "category": "biryani",
+    "area": "Saddar",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Mutton Biryani",
+    "desc": "Saddar's classic biryani that has never changed its recipe."
+  },
+  {
+    "id": 71,
+    "name": "Subway Karachi",
+    "category": "fast-food",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Tikka Sub",
+    "desc": "Custom sandwiches with Karachi's love for spice built in."
+  },
+  {
+    "id": 72,
+    "name": "Lakeview Restaurant",
+    "category": "continental",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Steak",
+    "desc": "Relaxed continental spot with generous portions and good views."
+  },
+  {
+    "id": 73,
+    "name": "Nihari Inn",
+    "category": "nihari",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Beef Nihari",
+    "desc": "Rich Gulshan nihari with thick gravy and melt-in-mouth meat."
+  },
+  {
+    "id": 74,
+    "name": "Yummy House",
+    "category": "chinese",
+    "area": "PECHS",
+    "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Beef Black Bean",
+    "desc": "PECHS Chinese staple with reliable taste and quick service."
+  },
+  {
+    "id": 75,
+    "name": "Al-Habib Sweets",
+    "category": "dessert",
+    "area": "Nazimabad",
+    "image": "https://images.unsplash.com/photo-1502047754212-70df513807d8?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Barfi",
+    "desc": "Traditional mithai shop with fresh barfi and laddoo daily."
+  },
+  {
+    "id": 76,
+    "name": "Sufi Restaurant",
+    "category": "bbq",
+    "area": "DHA",
+    "image": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Boti",
+    "desc": "DHA favourite for evening BBQ with charcoal-grilled boti."
+  },
+  {
+    "id": 77,
+    "name": "Street1 Cafe",
+    "category": "continental",
+    "area": "Bahadurabad",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Club Sandwich",
+    "desc": "Trendy cafe with great club sandwiches and fresh juices."
+  },
+  {
+    "id": 78,
+    "name": "Spice Bazaar",
+    "category": "biryani",
+    "area": "Scheme 33",
+    "image": "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Biryani",
+    "desc": "Scheme 33 gem serving hearty biryani at pocket-friendly rates."
+  },
+  {
+    "id": 79,
+    "name": "Nishat Hotel Restaurant",
+    "category": "continental",
+    "area": "Saddar",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Mutton Chops",
+    "desc": "Old Saddar hotel dining with classic Pakistani and continental."
+  },
+  {
+    "id": 80,
+    "name": "Taste of Lahore",
+    "category": "bbq",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Lahori Chargha",
+    "desc": "Full Lahori chargha and BBQ spread in the heart of Gulshan."
+  },
+  {
+    "id": 81,
+    "name": "Kaybees Patisserie",
+    "category": "dessert",
+    "area": "Tariq Road",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Black Forest Cake",
+    "desc": "Iconic Karachi patisserie for celebration cakes and pastries."
+  },
+  {
+    "id": 82,
+    "name": "Roasters Coffee",
+    "category": "chai",
+    "area": "DHA",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Cold Brew",
+    "desc": "Specialty coffee roastery serving Karachi's coffee community."
+  },
+  {
+    "id": 83,
+    "name": "Pizza by the Bay",
+    "category": "continental",
+    "area": "Boat Basin",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "BBQ Chicken Pizza",
+    "desc": "Breezy Boat Basin pizza spot with great evening views."
+  },
+  {
+    "id": 84,
+    "name": "Tasty Tikka",
+    "category": "bbq",
+    "area": "North Nazimabad",
+    "image": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Tikka",
+    "desc": "Juicy tikka cooked fresh on live charcoal every evening."
+  },
+  {
+    "id": 85,
+    "name": "Burns Road Paye",
+    "category": "nihari",
+    "area": "Burns Road",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Mutton Paye",
+    "desc": "Early morning paye with naan — a Burns Road winter ritual."
+  },
+  {
+    "id": 86,
+    "name": "Cakes & Bakes",
+    "category": "dessert",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1506313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chocolate Truffle Cake",
+    "desc": "Karachi's favourite for birthday cakes and chocolate desserts."
+  },
+  {
+    "id": 87,
+    "name": "Desi Karahi House",
+    "category": "bbq",
+    "area": "Malir",
+    "image": "https://images.unsplash.com/photo-1532636875304-0c8fe119ff91?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Mutton Karahi",
+    "desc": "Malir's open-air karahi spot with live flame cooking."
+  },
+  {
+    "id": 88,
+    "name": "Chai Dhaba Korangi",
+    "category": "chai",
+    "area": "Korangi",
+    "image": "https://images.unsplash.com/photo-1563889362-ec40364e2c5d?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Doodh Patti",
+    "desc": "No-frills dhaba chai that fuels Korangi's working crowd."
+  },
+  {
+    "id": 89,
+    "name": "Masooma Biryani",
+    "category": "biryani",
+    "area": "Liaquatabad",
+    "image": "https://images.unsplash.com/photo-1631515243265-4f4c9c72e4eb?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Biryani",
+    "desc": "A Liaquatabad household name for consistent biryani quality."
+  },
+  {
+    "id": 90,
+    "name": "Karachi Fish Market",
+    "category": "seafood",
+    "area": "Saddar",
+    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Masala Fish",
+    "desc": "Fresh catch prepared with bold Karachi spices at the market."
+  },
+  {
+    "id": 91,
+    "name": "Kolachi Clifton",
+    "category": "seafood",
+    "area": "Clifton",
+    "image": "https://images.unsplash.com/photo-1559737135-c05296e38e68?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Prawn Handi",
+    "desc": "Clifton seafood favourite with stunning Karachi sea views."
+  },
+  {
+    "id": 92,
+    "name": "Moin Cold Drinks",
+    "category": "dessert",
+    "area": "Bahadurabad",
+    "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Falooda",
+    "desc": "Classic cold drinks and falooda — a Bahadurabad institution."
+  },
+  {
+    "id": 93,
+    "name": "Darbar Restaurant",
+    "category": "biryani",
+    "area": "Gulistan-e-Johar",
+    "image": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Mutton Biryani",
+    "desc": "Johar's trusted darbar for spicy and aromatic mutton biryani."
+  },
+  {
+    "id": 94,
+    "name": "Chai Wala Saddar",
+    "category": "chai",
+    "area": "Saddar",
+    "image": "https://images.unsplash.com/photo-1594756202469-9ff9799a2e4e?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Irani Chai",
+    "desc": "Old Saddar Irani chai served in classic glass cups."
+  },
+  {
+    "id": 95,
+    "name": "Grill Republic",
+    "category": "bbq",
+    "area": "Gulshan",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265949?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Beef Steak",
+    "desc": "Modern grill house with quality beef cuts and bold marinades."
+  },
+  {
+    "id": 96,
+    "name": "Tandoori Corner",
+    "category": "street-food",
+    "area": "PECHS",
+    "image": "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Tandoori Naan",
+    "desc": "Fresh tandoori naan straight from the clay oven every morning."
+  },
+  {
+    "id": 97,
+    "name": "Saima's Kitchen",
+    "category": "continental",
+    "area": "DHA",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281288?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Alfredo",
+    "desc": "Home-style continental cooking served with love in DHA."
+  },
+  {
+    "id": 98,
+    "name": "Johar Biryani",
+    "category": "biryani",
+    "area": "Gulistan-e-Johar",
+    "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Biryani",
+    "desc": "Johar's biryani staple that locals have trusted for years."
+  },
+  {
+    "id": 99,
+    "name": "Haji Tikka",
+    "category": "bbq",
+    "area": "Saddar",
+    "image": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Chicken Tikka",
+    "desc": "Saddar's legendary tikka stall that draws crowds nightly."
+  },
+  {
+    "id": 100,
+    "name": "Kababish",
+    "category": "bbq",
+    "area": "Bahadurabad",
+    "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=80",
+    "mustOrder": "Seekh Kabab",
+    "desc": "Bahadurabad BBQ institution known for perfectly spiced kababs."
+  }
+]

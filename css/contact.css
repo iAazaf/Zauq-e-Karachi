@@ -1,0 +1,150 @@
+.contact-hero{
+    padding:180px 0 100px;
+    text-align:center;
+}
+
+.hero-mini{
+    color:var(--gold);
+    letter-spacing:4px;
+}
+
+.hero-title{
+    font-size:5rem;
+    font-family:'Playfair Display',serif;
+    font-weight:900;
+}
+
+.hero-title span{
+    color:var(--gold);
+}
+
+.hero-text{
+    max-width:700px;
+    margin:auto;
+    color:var(--gray);
+}
+
+.contact-cards{
+    padding:50px 0;
+}
+
+.contact-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    text-align:center;
+    padding:40px;
+    transition:.4s;
+}
+
+.contact-card:hover{
+    transform:translateY(-10px);
+    border-color:var(--gold);
+     box-shadow:0 20px 40px rgba(212,167,98,.15);
+}
+
+.contact-card i{
+    font-size:2.5rem;
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+.contact-form-section{
+    padding:120px 0;
+}
+
+.form-title{
+    font-size:3rem;
+    font-family:'Playfair Display',serif;
+}
+
+.form-desc{
+    color:var(--gray);
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:var(--gold);
+
+    box-shadow:0 0 20px rgba(212,167,98,.25);
+
+}
+.contact-form input,
+.contact-form textarea{
+    background:#141414;
+    border:1px solid rgba(255,255,255,.08);
+    color:white;
+    padding:18px;
+    border-radius:15px;
+}
+
+.contact-form button{
+    background:linear-gradient(
+    135deg,
+    var(--gold),
+    #f7d28e
+    );
+transition:.3s;
+    border:none;
+    padding:16px;
+    border-radius:15px;
+    font-weight:700;
+}
+
+
+.contact-form button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(212,167,98,.3);
+
+}
+.faq-section{
+    padding:100px 0;
+}
+
+.accordion-item{
+    background:#111;
+    border:none;
+    margin-bottom:15px;
+    overflow:hidden;
+    border-radius:15px;
+}
+.accordion-button{
+    background:#111;
+    color:white;
+}
+
+.accordion-button:not(.collapsed){
+    background:var(--gold);
+    color:black;
+}
+
+.accordion-body{
+    background:#181818;
+    color:#ddd;
+}
+.contact-hero{
+    padding:180px 0 100px;
+    text-align:center;
+    position:relative;
+}
+
+.contact-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(rgba(0,0,0,.86),rgba(0,0,0,.92)),
+    url("/images/restaurant-bg.jpeg") no-repeat
+    center/cover;
+    z-index:-1;
+}
